@@ -49,6 +49,7 @@ p {
   margin: 0 auto;
   color: #ccc;
   text-indent: 30px;
+  text-align: justify;
 }
 
 /* Conteúdo principal */
