@@ -5,6 +5,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(to bottom, #0d0d2b, #1a1a40);
   color: #e0e0f8;
+  
 }
 
 /* Navegação com brilho */
@@ -47,6 +48,7 @@ p {
   max-width: 700px;
   margin: 0 auto;
   color: #ccc;
+  text-indent: 30px;
 }
 
 /* Conteúdo principal */
