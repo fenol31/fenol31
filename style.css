@@ -41,6 +41,7 @@ h1 {
   font-size: 2.8em;
   color: #bb86fc;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 p {
@@ -49,7 +50,7 @@ p {
   margin: 0 auto;
   color: #ccc;
   text-indent: 30px;
-  text-align: center;
+  text-align: justify;
 }
 
 /* Conteúdo principal */
