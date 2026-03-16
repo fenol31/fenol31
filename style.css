@@ -28,7 +28,26 @@ nav a {
 nav a:hover {
   color: #ff79c6;
 }
+/* Links claros e em negrito */
+a:link {
+  color: #ffffff; /* link não visitado */
+  font-weight: bold;
+  text-decoration: none;
+}
 
+a:visited {
+  color: #e6e6ff; /* link já visitado */
+  font-weight: bold;
+}
+
+a:hover {
+  color: #ffb3ff; /* quando passa o mouse */
+  font-weight: bold;
+}
+
+a:active {
+  color: #ffffff; /* quando está clicando */
+}
 /* Cabeçalho com efeito de brilho */
 header {
   text-align: center;
