@@ -1,764 +1,511 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperação - Fenol31</title>
 
-<title>Recuperação - Fenol31</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-<style>
-
-/* CONTAINER GERAL */
-
-.recuperacao {
-    max-width: 1000px;
-    margin: 25px auto;
-    padding: 15px;
-    font-family: Arial, sans-serif;
-    color: #333;
-    line-height: 1.6;
-}
-
-.recuperacao h1 {
-    text-align: center;
-}
-
-.recuperacao .introducao {
-    background: #eef3f8;
-    padding: 20px;
-    border-radius: 10px;
-    border-left: 5px solid #34495e;
-    margin-bottom: 25px;
-}
-
-/* SÉRIES */
-
-.serie-box {
-    margin: 30px 0;
-    border-radius: 12px;
-    overflow: hidden;
-    border: 1px solid #ddd;
-}
-
-.serie-titulo {
-    padding: 18px;
-    color: white;
-    font-size: 23px;
-    font-weight: bold;
-}
-
-.serie1 { background: #287a68; }
-.serie2 { background: #356ca5; }
-.serie3 { background: #79549a; }
-
-/* BIMESTRES */
-
-.bimestre {
-    padding: 18px;
-    border-bottom: 1px solid #ddd;
-}
-
-.bimestre:last-child {
-    border-bottom: none;
-}
-
-.bimestre h3 {
-    padding: 12px;
-    border-radius: 7px;
-    font-size: 18px;
-}
-
-.b1 h3 {
-    background: #e1f2eb;
-    color: #17634e;
-}
-
-.b2 h3 {
-    background: #e5effa;
-    color: #245b91;
-}
-
-.b3 h3 {
-    background: #f0e8f7;
-    color: #68438a;
-}
-
-/* LISTAS */
-
-.recuperacao li {
-    margin-bottom: 7px;
-}
-
-.recuperacao ul,
-.recuperacao ol {
-    padding-left: 25px;
-}
-
-/* AVISOS */
-
-.aviso {
-    background: #fff8e6;
-    border-left: 5px solid #e5a323;
-    padding: 18px;
-    border-radius: 7px;
-    margin: 20px 0;
-}
-
-.alerta {
-    background: #fdecec;
-    border-left: 5px solid #c0392b;
-    padding: 18px;
-    border-radius: 7px;
-    margin: 20px 0;
-}
-
-/* EXIGÊNCIAS */
-
-.exigencias {
-    background: #f5f7f9;
-    padding: 12px 18px;
-    border-radius: 8px;
-    margin-top: 15px;
-}
-
-.exigencias strong {
-    color: #2457a7;
-}
-
-/* ABAS EXPANSÍVEIS */
-
-.serie-box details {
-    border-bottom: 1px solid #ddd;
-}
-
-.serie-box details:last-child {
-    border-bottom: none;
-}
-
-.serie-box summary {
-    cursor: pointer;
-    padding: 12px 18px;
-    font-weight: bold;
-    font-size: 17px;
-}
-
-.serie-box summary:hover {
-    background: #f5f5f5;
-}
-
-/* TABELA */
-
-.tabela-avaliacao {
-    width: 100%;
-    border-collapse: collapse;
-    background: white;
-}
-
-.tabela-avaliacao th,
-.tabela-avaliacao td {
-    border: 1px solid #ccc;
-    padding: 10px;
-}
-
-.tabela-avaliacao th {
-    background: #e5e7eb;
-}
-
-/* CELULAR */
-
-@media (max-width: 600px) {
-
-    .recuperacao {
-        padding: 10px;
-    }
-
-    .serie-titulo {
-        font-size: 20px;
-    }
-
-    .bimestre {
-        padding: 12px;
-    }
-
-    .bimestre h3 {
-        font-size: 16px;
-    }
-
-    .tabela-avaliacao {
-        font-size: 13px;
-    }
-
-}
-
-</style>
-
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
-
-<!-- MENU DE NAVEGAÇÃO -->
 
 <nav>
     <a href="index.html"><i class="fas fa-jedi"></i> Início</a>
     <a href="1serie.html"><i class="fas fa-flask"></i> 1ª Série</a>
     <a href="2serie.html"><i class="fas fa-vial"></i> 2ª Série</a>
     <a href="3serie.html"><i class="fas fa-atom"></i> 3ª Série</a>
-    <a href="recuperacao.html"><i class="fas fa-book-open"></i> Recuperação</a>
+    <a href="recuperacao.html"><i class="fas fa-book"></i> Recuperação</a>
 </nav>
 
+<h1><i class="fas fa-book-open"></i> Trabalhos de Recuperação – Química</h1>
 
-<main class="recuperacao">
+<section>
+    <h2>📌 Orientações Gerais</h2>
 
-<h1><i class="fas fa-book-open"></i> Trabalhos de Recuperação</h1>
+    <p>
+        Os trabalhos de recuperação têm como objetivo revisar e aprofundar
+        os principais conceitos de Química estudados durante o ano letivo.
+    </p>
 
-<p style="text-align:center;">
-<strong>Química – Ensino Médio</strong>
-</p>
+    <p><strong>Leia atentamente as orientações antes de iniciar:</strong></p>
 
-<div class="introducao">
+    <ul>
+        <li>O trabalho deverá ser realizado individualmente e manuscrito (escrito à mão).</li>
+        <li>Deverá conter <strong>10 páginas manuscritas no total, considerando frente e verso (5 folhas preenchidas dos dois lados).</strong></li>
+        <li>O estudante deverá desenvolver todos os conceitos solicitados no bimestre correspondente.</li>
+        <li>Não será aceita a simples cópia de definições. Os conceitos deverão ser explicados com as próprias palavras.</li>
+        <li>Utilize exemplos do cotidiano para demonstrar a compreensão dos conteúdos.</li>
+        <li>Inclua desenhos, esquemas, fórmulas, equações químicas e representações sempre que necessário.</li>
+        <li>Os exercícios deverão apresentar enunciado, cálculos e resolução, quando aplicável.</li>
+        <li>O trabalho deverá apresentar introdução, desenvolvimento, conclusão e referências bibliográficas.</li>
+        <li>Utilize letra legível e mantenha a organização e o capricho.</li>
+    </ul>
 
-<h2>📌 Orientações gerais</h2>
-
-<p>
-Os trabalhos de recuperação têm como objetivo revisar e aprofundar os principais conceitos de Química estudados durante o ano letivo.
-</p>
-
-<p><strong>Leia atentamente as instruções:</strong></p>
-
-<ul>
-<li>O trabalho deverá ser realizado individualmente e manuscrito (escrito à mão).</li>
-
-<li>Deverá conter <strong>10 páginas manuscritas no total, considerando frente e verso (5 folhas preenchidas dos dois lados)</strong>.</li>
-
-<li>O estudante deverá desenvolver todos os conceitos solicitados no bimestre correspondente.</li>
-
-<li>Não será aceita a simples cópia de definições. Os conceitos deverão ser explicados com as próprias palavras.</li>
-
-<li>Utilize exemplos do cotidiano para demonstrar a compreensão dos conteúdos.</li>
-
-<li>Inclua desenhos, esquemas, fórmulas, equações químicas e representações sempre que necessário.</li>
-
-<li>Os exercícios deverão apresentar enunciado, cálculos e resolução, quando aplicável.</li>
-
-<li>O trabalho deverá apresentar introdução, desenvolvimento, conclusão e referências bibliográficas.</li>
-
-<li>Utilize letra legível, mantenha a organização e tenha atenção à apresentação.</li>
-</ul>
-
-<div class="alerta">
-<strong>ATENÇÃO!</strong>
-
-<p>
-O estudante deverá realizar somente o trabalho referente ao(s) bimestre(s) em que ficou de recuperação.
-</p>
-
-<p>
-Exemplo: se ficou de recuperação no 1º e no 3º bimestres, deverá entregar os dois trabalhos correspondentes.
-</p>
-</div>
-
-</div>
+    <p>
+        <strong>ATENÇÃO:</strong> O estudante deverá realizar somente o trabalho
+        referente ao(s) bimestre(s) em que ficou de recuperação.
+        Por exemplo, se ficou de recuperação no 1º e no 3º bimestres,
+        deverá entregar os dois trabalhos correspondentes.
+    </p>
+</section>
 
 
 <!-- ================================================= -->
 <!-- 1ª SÉRIE -->
 <!-- ================================================= -->
 
-<div class="serie-box">
+<section>
 
-<div class="serie-titulo serie1">
-<i class="fas fa-flask"></i> 1ª SÉRIE DO ENSINO MÉDIO
-</div>
+    <h2>🧪 1ª SÉRIE DO ENSINO MÉDIO</h2>
 
+    <h3>1º BIMESTRE – MATÉRIA, SUBSTÂNCIAS E TRANSFORMAÇÕES</h3>
 
-<!-- 1 BIMESTRE -->
+    <p><strong>Tema:</strong> Fundamentos da Química e o estudo da matéria.</p>
 
-<div class="bimestre b1">
+    <p>O estudante deverá pesquisar, explicar e desenvolver os seguintes conceitos:</p>
 
-<h3>1º BIMESTRE – MATÉRIA, SUBSTÂNCIAS E TRANSFORMAÇÕES</h3>
+    <ol>
+        <li>O que é Química e qual sua importância para a sociedade.</li>
+        <li>A origem da vida e a formação da matéria no Universo.</li>
+        <li>Conceito de matéria, corpo e objeto.</li>
+        <li>Propriedades gerais e específicas da matéria.</li>
+        <li>Estados físicos da matéria: sólido, líquido e gasoso.</li>
+        <li>Mudanças de estado físico e suas características.</li>
+        <li>Substâncias puras e misturas.</li>
+        <li>Diferenças entre substâncias simples e compostas.</li>
+        <li>Misturas homogêneas e heterogêneas.</li>
+        <li>Métodos de separação de misturas: filtração, decantação, destilação, centrifugação, evaporação e catação.</li>
+        <li>Fenômenos físicos e químicos.</li>
+        <li>Transformações químicas presentes no cotidiano.</li>
+    </ol>
 
-<p><strong>Tema:</strong> Fundamentos da Química e o estudo da matéria.</p>
+    <p><strong>Exigências específicas:</strong></p>
 
-<p>O estudante deverá pesquisar, explicar e desenvolver os seguintes conceitos:</p>
-
-<ol>
-<li>O que é Química e qual sua importância para a sociedade.</li>
-<li>A origem da vida e a formação da matéria no Universo.</li>
-<li>Conceito de matéria, corpo e objeto.</li>
-<li>Propriedades gerais e específicas da matéria.</li>
-<li>Estados físicos da matéria: sólido, líquido e gasoso.</li>
-<li>Mudanças de estado físico e suas características.</li>
-<li>Substâncias puras e misturas.</li>
-<li>Diferenças entre substâncias simples e compostas.</li>
-<li>Misturas homogêneas e heterogêneas.</li>
-<li>Métodos de separação de misturas: filtração, decantação, destilação, centrifugação, evaporação e catação.</li>
-<li>Fenômenos físicos e químicos.</li>
-<li>Transformações químicas presentes no cotidiano.</li>
-</ol>
-
-<div class="exigencias">
-<strong>EXIGÊNCIAS ESPECÍFICAS:</strong>
-<ul>
-<li>Desenhar e explicar os três estados físicos da matéria.</li>
-<li>Apresentar exemplos de misturas homogêneas e heterogêneas.</li>
-<li>Desenhar e explicar pelo menos quatro métodos de separação de misturas.</li>
-<li>Apresentar exemplos de fenômenos físicos e químicos do cotidiano.</li>
-</ul>
-</div>
-
-</div>
+    <ul>
+        <li>Desenhar e explicar os três estados físicos da matéria.</li>
+        <li>Apresentar exemplos de misturas homogêneas e heterogêneas.</li>
+        <li>Desenhar e explicar pelo menos quatro métodos de separação de misturas.</li>
+        <li>Apresentar exemplos de fenômenos físicos e químicos do cotidiano.</li>
+    </ul>
 
 
-<!-- 2 BIMESTRE -->
+    <h3>2º BIMESTRE – ESTRUTURA ATÔMICA E TABELA PERIÓDICA</h3>
 
-<div class="bimestre b2">
+    <p><strong>Tema:</strong> A constituição da matéria e a organização dos elementos químicos.</p>
 
-<h3>2º BIMESTRE – ESTRUTURA ATÔMICA E TABELA PERIÓDICA</h3>
+    <p>O estudante deverá pesquisar, explicar e desenvolver os seguintes conceitos:</p>
 
-<p><strong>Tema:</strong> A constituição da matéria e a organização dos elementos químicos.</p>
+    <ol>
+        <li>Conceito de átomo.</li>
+        <li>Evolução dos modelos atômicos.</li>
+        <li>Modelo atômico de Dalton.</li>
+        <li>Modelo atômico de Thomson.</li>
+        <li>Modelo atômico de Rutherford.</li>
+        <li>Modelo atômico de Bohr.</li>
+        <li>Prótons, nêutrons e elétrons.</li>
+        <li>Número atômico e número de massa.</li>
+        <li>Formação de íons: cátions e ânions.</li>
+        <li>Distribuição eletrônica por camadas e subníveis.</li>
+        <li>Níveis e subníveis de energia.</li>
+        <li>Origem dos elementos químicos no Universo.</li>
+        <li>Organização da Tabela Periódica.</li>
+        <li>Períodos e famílias.</li>
+        <li>Classificação dos elementos: metais, ametais e gases nobres.</li>
+        <li>Propriedades periódicas: raio atômico, eletronegatividade e energia de ionização.</li>
+    </ol>
 
-<ol>
-<li>Conceito de átomo.</li>
-<li>Evolução dos modelos atômicos.</li>
-<li>Modelo atômico de Dalton.</li>
-<li>Modelo atômico de Thomson.</li>
-<li>Modelo atômico de Rutherford.</li>
-<li>Modelo atômico de Bohr.</li>
-<li>Prótons, nêutrons e elétrons.</li>
-<li>Número atômico e número de massa.</li>
-<li>Formação de íons: cátions e ânions.</li>
-<li>Distribuição eletrônica por camadas e subníveis.</li>
-<li>Níveis e subníveis de energia.</li>
-<li>Origem dos elementos químicos no Universo.</li>
-<li>Organização da Tabela Periódica.</li>
-<li>Períodos e famílias.</li>
-<li>Classificação dos elementos: metais, ametais e gases nobres.</li>
-<li>Propriedades periódicas: raio atômico, eletronegatividade e energia de ionização.</li>
-</ol>
+    <p><strong>Exigências específicas:</strong></p>
 
-<div class="exigencias">
-<strong>EXIGÊNCIAS ESPECÍFICAS:</strong>
-<ul>
-<li>Desenhar e explicar os quatro modelos atômicos estudados.</li>
-<li>Representar átomos e íons, identificando prótons, nêutrons e elétrons.</li>
-<li>Realizar a distribuição eletrônica de pelo menos cinco elementos químicos.</li>
-<li>Identificar períodos e famílias na Tabela Periódica.</li>
-</ul>
-</div>
-
-</div>
+    <ul>
+        <li>Desenhar e explicar os quatro modelos atômicos estudados.</li>
+        <li>Representar átomos e íons, identificando prótons, nêutrons e elétrons.</li>
+        <li>Realizar a distribuição eletrônica de pelo menos cinco elementos químicos.</li>
+        <li>Identificar períodos e famílias na Tabela Periódica.</li>
+    </ul>
 
 
-<!-- 3 BIMESTRE -->
+    <h3>3º BIMESTRE – LIGAÇÕES QUÍMICAS E GEOMETRIA MOLECULAR</h3>
 
-<div class="bimestre b3">
+    <p><strong>Tema:</strong> Como os átomos se unem para formar as substâncias?</p>
 
-<h3>3º BIMESTRE – LIGAÇÕES QUÍMICAS E GEOMETRIA MOLECULAR</h3>
+    <p>O estudante deverá pesquisar, explicar e desenvolver os seguintes conceitos:</p>
 
-<p><strong>Tema:</strong> Como os átomos se unem para formar as substâncias?</p>
+    <ol>
+        <li>Por que os átomos realizam ligações químicas.</li>
+        <li>Regra do octeto.</li>
+        <li>Elétrons de valência.</li>
+        <li>Ligação iônica.</li>
+        <li>Ligação covalente.</li>
+        <li>Ligação metálica.</li>
+        <li>Diferenças entre os tipos de ligações.</li>
+        <li>Representação das ligações por estruturas de Lewis.</li>
+        <li>Formação de compostos iônicos.</li>
+        <li>Fórmulas químicas e representação de moléculas.</li>
+        <li>Geometria molecular.</li>
+        <li>Polaridade das ligações.</li>
+        <li>Moléculas polares e apolares.</li>
+        <li>Forças intermoleculares.</li>
+        <li>Relação entre ligações químicas e propriedades dos materiais.</li>
+    </ol>
 
-<ol>
-<li>Por que os átomos realizam ligações químicas.</li>
-<li>Regra do octeto.</li>
-<li>Elétrons de valência.</li>
-<li>Ligação iônica.</li>
-<li>Ligação covalente.</li>
-<li>Ligação metálica.</li>
-<li>Diferenças entre os tipos de ligações.</li>
-<li>Representação das ligações por estruturas de Lewis.</li>
-<li>Formação de compostos iônicos.</li>
-<li>Fórmulas químicas e representação de moléculas.</li>
-<li>Geometria molecular.</li>
-<li>Polaridade das ligações.</li>
-<li>Moléculas polares e apolares.</li>
-<li>Forças intermoleculares.</li>
-<li>Relação entre ligações químicas e propriedades dos materiais.</li>
-</ol>
+    <p><strong>Exigências específicas:</strong></p>
 
-<div class="exigencias">
-<strong>EXIGÊNCIAS ESPECÍFICAS:</strong>
-<ul>
-<li>Representar exemplos de ligações iônicas, covalentes e metálicas.</li>
-<li>Desenhar estruturas de Lewis de pelo menos cinco moléculas ou íons.</li>
-<li>Representar as geometrias moleculares de H₂O, CO₂, NH₃ e CH₄.</li>
-<li>Explicar a diferença entre moléculas polares e apolares.</li>
-<li>Apresentar exemplos de forças intermoleculares.</li>
-</ul>
-</div>
+    <ul>
+        <li>Representar exemplos de ligações iônicas, covalentes e metálicas.</li>
+        <li>Desenhar estruturas de Lewis de pelo menos cinco moléculas ou íons.</li>
+        <li>Representar as geometrias moleculares de H₂O, CO₂, NH₃ e CH₄.</li>
+        <li>Explicar a diferença entre moléculas polares e apolares.</li>
+        <li>Apresentar exemplos de forças intermoleculares.</li>
+    </ul>
 
-</div>
-
-</div>
+</section>
 
 
 <!-- ================================================= -->
 <!-- 2ª SÉRIE -->
 <!-- ================================================= -->
 
-<div class="serie-box">
+<section>
 
-<div class="serie-titulo serie2">
-<i class="fas fa-vial"></i> 2ª SÉRIE DO ENSINO MÉDIO
-</div>
+    <h2>⚗️ 2ª SÉRIE DO ENSINO MÉDIO</h2>
 
+    <h3>1º BIMESTRE – REAÇÕES QUÍMICAS E ESTEQUIOMETRIA</h3>
 
-<div class="bimestre b1">
+    <p><strong>Tema:</strong> As transformações químicas e suas relações quantitativas.</p>
 
-<h3>1º BIMESTRE – REAÇÕES QUÍMICAS E ESTEQUIOMETRIA</h3>
+    <p>O estudante deverá pesquisar, explicar e desenvolver os seguintes conceitos:</p>
 
-<p><strong>Tema:</strong> As transformações químicas e suas relações quantitativas.</p>
+    <ol>
+        <li>Conceito de transformação química.</li>
+        <li>Diferenças entre reagentes e produtos.</li>
+        <li>Evidências de ocorrência de reações químicas.</li>
+        <li>Representação das reações por equações químicas.</li>
+        <li>Lei da conservação das massas (Lei de Lavoisier).</li>
+        <li>Lei das proporções constantes (Lei de Proust).</li>
+        <li>Balanceamento de equações químicas.</li>
+        <li>Coeficientes estequiométricos.</li>
+        <li>Conceito de mol.</li>
+        <li>Massa molar.</li>
+        <li>Número de Avogadro.</li>
+        <li>Relação entre massa, quantidade de matéria e número de partículas.</li>
+        <li>Cálculos estequiométricos.</li>
+        <li>Reagente limitante e reagente em excesso.</li>
+        <li>Rendimento de uma reação química.</li>
+    </ol>
 
-<ol>
-<li>Conceito de transformação química.</li>
-<li>Diferenças entre reagentes e produtos.</li>
-<li>Evidências de ocorrência de reações químicas.</li>
-<li>Representação das reações por equações químicas.</li>
-<li>Lei da conservação das massas (Lei de Lavoisier).</li>
-<li>Lei das proporções constantes (Lei de Proust).</li>
-<li>Balanceamento de equações químicas.</li>
-<li>Coeficientes estequiométricos.</li>
-<li>Conceito de mol.</li>
-<li>Massa molar.</li>
-<li>Número de Avogadro.</li>
-<li>Relação entre massa, quantidade de matéria e número de partículas.</li>
-<li>Cálculos estequiométricos.</li>
-<li>Reagente limitante e reagente em excesso.</li>
-<li>Rendimento de uma reação química.</li>
-</ol>
+    <p><strong>Exigências específicas:</strong></p>
 
-<div class="exigencias">
-<strong>EXIGÊNCIAS ESPECÍFICAS:</strong>
-<ul>
-<li>Apresentar exemplos de reações químicas presentes no cotidiano.</li>
-<li>Escrever e balancear pelo menos cinco equações químicas.</li>
-<li>Resolver três exercícios de cálculos estequiométricos, apresentando todos os cálculos.</li>
-<li>Explicar a importância das leis de Lavoisier e Proust.</li>
-</ul>
-</div>
-
-</div>
+    <ul>
+        <li>Apresentar exemplos de reações químicas presentes no cotidiano.</li>
+        <li>Escrever e balancear pelo menos cinco equações químicas.</li>
+        <li>Resolver três exercícios de cálculos estequiométricos, apresentando todos os cálculos.</li>
+        <li>Explicar a importância das leis de Lavoisier e Proust.</li>
+    </ul>
 
 
-<div class="bimestre b2">
+    <h3>2º BIMESTRE – SOLUÇÕES E CONCENTRAÇÃO</h3>
 
-<h3>2º BIMESTRE – SOLUÇÕES E CONCENTRAÇÃO</h3>
+    <p><strong>Tema:</strong> A Química das soluções no cotidiano.</p>
 
-<p><strong>Tema:</strong> A Química das soluções no cotidiano.</p>
+    <p>O estudante deverá pesquisar, explicar e desenvolver os seguintes conceitos:</p>
 
-<ol>
-<li>Conceito de solução.</li>
-<li>Soluto e solvente.</li>
-<li>Soluções homogêneas e suas características.</li>
-<li>Classificação das soluções quanto à quantidade de soluto.</li>
-<li>Soluções diluídas e concentradas.</li>
-<li>Soluções saturadas, insaturadas e supersaturadas.</li>
-<li>Solubilidade.</li>
-<li>Influência da temperatura na solubilidade.</li>
-<li>Concentração comum (g/L).</li>
-<li>Concentração molar (mol/L).</li>
-<li>Título e porcentagem em soluções.</li>
-<li>Diluição de soluções.</li>
-<li>Mistura de soluções.</li>
-<li>Aplicações das soluções na indústria, na medicina e na alimentação.</li>
-<li>Importância da concentração de substâncias para a saúde e o meio ambiente.</li>
-</ol>
+    <ol>
+        <li>Conceito de solução.</li>
+        <li>Soluto e solvente.</li>
+        <li>Soluções homogêneas e suas características.</li>
+        <li>Classificação das soluções quanto à quantidade de soluto.</li>
+        <li>Soluções diluídas e concentradas.</li>
+        <li>Soluções saturadas, insaturadas e supersaturadas.</li>
+        <li>Solubilidade.</li>
+        <li>Influência da temperatura na solubilidade.</li>
+        <li>Concentração comum (g/L).</li>
+        <li>Concentração molar (mol/L).</li>
+        <li>Título e porcentagem em soluções.</li>
+        <li>Diluição de soluções.</li>
+        <li>Mistura de soluções.</li>
+        <li>Aplicações das soluções na indústria, na medicina e na alimentação.</li>
+        <li>Importância da concentração de substâncias para a saúde e o meio ambiente.</li>
+    </ol>
 
-<div class="exigencias">
-<strong>EXIGÊNCIAS ESPECÍFICAS:</strong>
-<ul>
-<li>Apresentar exemplos de soluções presentes no cotidiano.</li>
-<li>Explicar a diferença entre soluto e solvente.</li>
-<li>Pesquisar e interpretar rótulos de produtos que apresentem concentração.</li>
-<li>Resolver três exercícios de concentração comum.</li>
-<li>Resolver dois exercícios de diluição de soluções.</li>
-</ul>
-</div>
+    <p><strong>Exigências específicas:</strong></p>
 
-</div>
+    <ul>
+        <li>Apresentar exemplos de soluções presentes no cotidiano.</li>
+        <li>Explicar a diferença entre soluto e solvente.</li>
+        <li>Pesquisar e interpretar rótulos de produtos que apresentem concentração.</li>
+        <li>Resolver três exercícios de concentração comum.</li>
+        <li>Resolver dois exercícios de diluição de soluções.</li>
+    </ul>
 
 
-<div class="bimestre b3">
+    <h3>3º BIMESTRE – TERMOQUÍMICA, CINÉTICA QUÍMICA E EQUILÍBRIO</h3>
 
-<h3>3º BIMESTRE – TERMOQUÍMICA, CINÉTICA QUÍMICA E EQUILÍBRIO</h3>
+    <p><strong>Tema:</strong> A energia e a velocidade das transformações químicas.</p>
 
-<p><strong>Tema:</strong> A energia e a velocidade das transformações químicas.</p>
+    <p>O estudante deverá pesquisar, explicar e desenvolver os seguintes conceitos:</p>
 
-<ol>
-<li>Conceito de energia nas transformações químicas.</li>
-<li>Reações exotérmicas.</li>
-<li>Reações endotérmicas.</li>
-<li>Entalpia.</li>
-<li>Variação de entalpia.</li>
-<li>Diagramas de energia das reações.</li>
-<li>Lei de Hess.</li>
-<li>Velocidade das reações químicas.</li>
-<li>Fatores que influenciam a velocidade das reações.</li>
-<li>Influência da temperatura.</li>
-<li>Influência da concentração.</li>
-<li>Superfície de contato.</li>
-<li>Catalisadores.</li>
-<li>Conceito de equilíbrio químico.</li>
-<li>Reações reversíveis.</li>
-<li>Princípio de Le Chatelier.</li>
-<li>Aplicações do equilíbrio químico na indústria e no cotidiano.</li>
-</ol>
+    <ol>
+        <li>Conceito de energia nas transformações químicas.</li>
+        <li>Reações exotérmicas.</li>
+        <li>Reações endotérmicas.</li>
+        <li>Entalpia.</li>
+        <li>Variação de entalpia.</li>
+        <li>Diagramas de energia das reações.</li>
+        <li>Lei de Hess.</li>
+        <li>Velocidade das reações químicas.</li>
+        <li>Fatores que influenciam a velocidade das reações.</li>
+        <li>Influência da temperatura.</li>
+        <li>Influência da concentração.</li>
+        <li>Superfície de contato.</li>
+        <li>Catalisadores.</li>
+        <li>Conceito de equilíbrio químico.</li>
+        <li>Reações reversíveis.</li>
+        <li>Princípio de Le Chatelier.</li>
+        <li>Aplicações do equilíbrio químico na indústria e no cotidiano.</li>
+    </ol>
 
-<div class="exigencias">
-<strong>EXIGÊNCIAS ESPECÍFICAS:</strong>
-<ul>
-<li>Apresentar exemplos de reações endotérmicas e exotérmicas.</li>
-<li>Desenhar diagramas de energia para os dois tipos de reação.</li>
-<li>Explicar os fatores que alteram a velocidade das reações.</li>
-<li>Apresentar exemplos de catalisadores no cotidiano.</li>
-<li>Explicar o princípio de Le Chatelier por meio de um exemplo.</li>
-</ul>
-</div>
+    <p><strong>Exigências específicas:</strong></p>
 
-</div>
+    <ul>
+        <li>Apresentar exemplos de reações endotérmicas e exotérmicas.</li>
+        <li>Desenhar diagramas de energia para os dois tipos de reação.</li>
+        <li>Explicar os fatores que alteram a velocidade das reações.</li>
+        <li>Apresentar exemplos de catalisadores no cotidiano.</li>
+        <li>Explicar o princípio de Le Chatelier por meio de um exemplo.</li>
+    </ul>
 
-</div>
+</section>
 
 
 <!-- ================================================= -->
 <!-- 3ª SÉRIE -->
 <!-- ================================================= -->
 
-<div class="serie-box">
+<section>
 
-<div class="serie-titulo serie3">
-<i class="fas fa-atom"></i> 3ª SÉRIE DO ENSINO MÉDIO
-</div>
+    <h2>⚛️ 3ª SÉRIE DO ENSINO MÉDIO</h2>
 
+    <h3>1º BIMESTRE – QUÍMICA ORGÂNICA E FUNÇÕES ORGÂNICAS</h3>
 
-<div class="bimestre b1">
+    <p><strong>Tema:</strong> O carbono e a diversidade dos compostos orgânicos.</p>
 
-<h3>1º BIMESTRE – QUÍMICA ORGÂNICA E FUNÇÕES ORGÂNICAS</h3>
+    <p>O estudante deverá pesquisar, explicar e desenvolver os seguintes conceitos:</p>
 
-<p><strong>Tema:</strong> O carbono e a diversidade dos compostos orgânicos.</p>
+    <ol>
+        <li>Histórico e importância da Química Orgânica.</li>
+        <li>Características do elemento carbono.</li>
+        <li>Tetravalência do carbono.</li>
+        <li>Ligações simples, duplas e triplas.</li>
+        <li>Classificação das cadeias carbônicas.</li>
+        <li>Cadeias abertas, fechadas e mistas.</li>
+        <li>Cadeias normais e ramificadas.</li>
+        <li>Cadeias saturadas e insaturadas.</li>
+        <li>Hidrocarbonetos.</li>
+        <li>Alcanos, alcenos, alcinos e alcadienos.</li>
+        <li>Nomenclatura básica dos compostos orgânicos.</li>
+        <li>Funções orgânicas oxigenadas: álcoois, fenóis, éteres, aldeídos, cetonas, ácidos carboxílicos e ésteres.</li>
+        <li>Funções orgânicas nitrogenadas: aminas e amidas.</li>
+        <li>Identificação de grupos funcionais.</li>
+        <li>Aplicações dos compostos orgânicos no cotidiano.</li>
+    </ol>
 
-<ol>
-<li>Histórico e importância da Química Orgânica.</li>
-<li>Características do elemento carbono.</li>
-<li>Tetravalência do carbono.</li>
-<li>Ligações simples, duplas e triplas.</li>
-<li>Classificação das cadeias carbônicas.</li>
-<li>Cadeias abertas, fechadas e mistas.</li>
-<li>Cadeias normais e ramificadas.</li>
-<li>Cadeias saturadas e insaturadas.</li>
-<li>Hidrocarbonetos.</li>
-<li>Alcanos, alcenos, alcinos e alcadienos.</li>
-<li>Nomenclatura básica dos compostos orgânicos.</li>
-<li>Funções orgânicas oxigenadas: álcoois, fenóis, éteres, aldeídos, cetonas, ácidos carboxílicos e ésteres.</li>
-<li>Funções orgânicas nitrogenadas: aminas e amidas.</li>
-<li>Identificação de grupos funcionais.</li>
-<li>Aplicações dos compostos orgânicos no cotidiano.</li>
-</ol>
+    <p><strong>Exigências específicas:</strong></p>
 
-<div class="exigencias">
-<strong>EXIGÊNCIAS ESPECÍFICAS:</strong>
-<ul>
-<li>Desenhar estruturas de diferentes cadeias carbônicas.</li>
-<li>Apresentar exemplos de hidrocarbonetos e suas aplicações.</li>
-<li>Desenhar e identificar as principais funções orgânicas.</li>
-<li>Pesquisar exemplos de compostos orgânicos presentes em medicamentos, combustíveis, cosméticos e alimentos.</li>
-<li>Apresentar a nomenclatura de pelo menos cinco compostos orgânicos.</li>
-</ul>
-</div>
-
-</div>
+    <ul>
+        <li>Desenhar estruturas de diferentes cadeias carbônicas.</li>
+        <li>Apresentar exemplos de hidrocarbonetos e suas aplicações.</li>
+        <li>Desenhar e identificar as principais funções orgânicas.</li>
+        <li>Pesquisar exemplos de compostos orgânicos presentes em medicamentos, combustíveis, cosméticos e alimentos.</li>
+        <li>Apresentar a nomenclatura de pelo menos cinco compostos orgânicos.</li>
+    </ul>
 
 
-<div class="bimestre b2">
+    <h3>2º BIMESTRE – ISOMERIA E REAÇÕES ORGÂNICAS</h3>
 
-<h3>2º BIMESTRE – ISOMERIA E REAÇÕES ORGÂNICAS</h3>
+    <p><strong>Tema:</strong> A diversidade estrutural e as transformações dos compostos orgânicos.</p>
 
-<p><strong>Tema:</strong> A diversidade estrutural e as transformações dos compostos orgânicos.</p>
+    <p>O estudante deverá pesquisar, explicar e desenvolver os seguintes conceitos:</p>
 
-<ol>
-<li>Conceito de isomeria.</li>
-<li>Isomeria plana.</li>
-<li>Isomeria de cadeia.</li>
-<li>Isomeria de posição.</li>
-<li>Isomeria de função.</li>
-<li>Isomeria de compensação.</li>
-<li>Tautomeria.</li>
-<li>Isomeria espacial.</li>
-<li>Isomeria geométrica (cis-trans).</li>
-<li>Isomeria óptica.</li>
-<li>Conceito de reações orgânicas.</li>
-<li>Reações de adição.</li>
-<li>Reações de substituição.</li>
-<li>Reações de eliminação.</li>
-<li>Reações de oxidação.</li>
-<li>Combustão de compostos orgânicos.</li>
-<li>Polímeros naturais e sintéticos.</li>
-<li>Aplicações dos polímeros na sociedade.</li>
-</ol>
+    <ol>
+        <li>Conceito de isomeria.</li>
+        <li>Isomeria plana.</li>
+        <li>Isomeria de cadeia.</li>
+        <li>Isomeria de posição.</li>
+        <li>Isomeria de função.</li>
+        <li>Isomeria de compensação.</li>
+        <li>Tautomeria.</li>
+        <li>Isomeria espacial.</li>
+        <li>Isomeria geométrica (cis-trans).</li>
+        <li>Isomeria óptica.</li>
+        <li>Conceito de reações orgânicas.</li>
+        <li>Reações de adição.</li>
+        <li>Reações de substituição.</li>
+        <li>Reações de eliminação.</li>
+        <li>Reações de oxidação.</li>
+        <li>Combustão de compostos orgânicos.</li>
+        <li>Polímeros naturais e sintéticos.</li>
+        <li>Aplicações dos polímeros na sociedade.</li>
+    </ol>
 
-<div class="exigencias">
-<strong>EXIGÊNCIAS ESPECÍFICAS:</strong>
-<ul>
-<li>Apresentar estruturas de pelo menos três pares de isômeros.</li>
-<li>Identificar e explicar os diferentes tipos de isomeria.</li>
-<li>Representar exemplos de reações de adição, substituição e eliminação.</li>
-<li>Explicar a importância dos polímeros naturais e sintéticos.</li>
-<li>Pesquisar exemplos de polímeros utilizados no cotidiano.</li>
-</ul>
-</div>
+    <p><strong>Exigências específicas:</strong></p>
 
-</div>
+    <ul>
+        <li>Apresentar estruturas de pelo menos três pares de isômeros.</li>
+        <li>Identificar e explicar os diferentes tipos de isomeria.</li>
+        <li>Representar exemplos de reações de adição, substituição e eliminação.</li>
+        <li>Explicar a importância dos polímeros naturais e sintéticos.</li>
+        <li>Pesquisar exemplos de polímeros utilizados no cotidiano.</li>
+    </ul>
 
 
-<div class="bimestre b3">
+    <h3>3º BIMESTRE – ELETROQUÍMICA, RADIOATIVIDADE E QUÍMICA AMBIENTAL</h3>
 
-<h3>3º BIMESTRE – ELETROQUÍMICA, RADIOATIVIDADE E QUÍMICA AMBIENTAL</h3>
+    <p><strong>Tema:</strong> A Química e suas aplicações na tecnologia, na energia e no meio ambiente.</p>
 
-<p><strong>Tema:</strong> A Química e suas aplicações na tecnologia, na energia e no meio ambiente.</p>
+    <p>O estudante deverá pesquisar, explicar e desenvolver os seguintes conceitos:</p>
 
-<ol>
-<li>Conceito de oxidação e redução.</li>
-<li>Número de oxidação (NOX).</li>
-<li>Identificação de processos de oxidação e redução.</li>
-<li>Transferência de elétrons.</li>
-<li>Pilhas eletroquímicas.</li>
-<li>Funcionamento de uma pilha.</li>
-<li>Ânodo e cátodo.</li>
-<li>Diferença entre pilhas e baterias.</li>
-<li>Eletrólise.</li>
-<li>Aplicações da eletroquímica.</li>
-<li>Conceito de radioatividade.</li>
-<li>Radiações alfa, beta e gama.</li>
-<li>Fissão e fusão nuclear.</li>
-<li>Aplicações da radioatividade na medicina e na indústria.</li>
-<li>Impactos ambientais dos resíduos radioativos.</li>
-<li>Poluição da água, do solo e do ar.</li>
-<li>Chuva ácida e efeito estufa.</li>
-<li>Química sustentável e desenvolvimento sustentável.</li>
-</ol>
+    <ol>
+        <li>Conceito de oxidação e redução.</li>
+        <li>Número de oxidação (NOX).</li>
+        <li>Identificação de processos de oxidação e redução.</li>
+        <li>Transferência de elétrons.</li>
+        <li>Pilhas eletroquímicas.</li>
+        <li>Funcionamento de uma pilha.</li>
+        <li>Ânodo e cátodo.</li>
+        <li>Diferença entre pilhas e baterias.</li>
+        <li>Eletrólise.</li>
+        <li>Aplicações da eletroquímica.</li>
+        <li>Conceito de radioatividade.</li>
+        <li>Radiações alfa, beta e gama.</li>
+        <li>Fissão e fusão nuclear.</li>
+        <li>Aplicações da radioatividade na medicina e na indústria.</li>
+        <li>Impactos ambientais dos resíduos radioativos.</li>
+        <li>Poluição da água, do solo e do ar.</li>
+        <li>Chuva ácida e efeito estufa.</li>
+        <li>Química sustentável e desenvolvimento sustentável.</li>
+    </ol>
 
-<div class="exigencias">
-<strong>EXIGÊNCIAS ESPECÍFICAS:</strong>
-<ul>
-<li>Explicar os processos de oxidação e redução, apresentando exemplos.</li>
-<li>Desenhar um esquema de funcionamento de uma pilha eletroquímica.</li>
-<li>Explicar as diferenças entre pilhas e eletrólise.</li>
-<li>Comparar as radiações alfa, beta e gama.</li>
-<li>Explicar as diferenças entre fissão e fusão nuclear.</li>
-<li>Discutir os impactos ambientais da poluição e apresentar possíveis soluções.</li>
-</ul>
-</div>
+    <p><strong>Exigências específicas:</strong></p>
 
-</div>
+    <ul>
+        <li>Explicar os processos de oxidação e redução, apresentando exemplos.</li>
+        <li>Desenhar um esquema de funcionamento de uma pilha eletroquímica.</li>
+        <li>Explicar as diferenças entre pilhas e eletrólise.</li>
+        <li>Comparar as radiações alfa, beta e gama.</li>
+        <li>Explicar as diferenças entre fissão e fusão nuclear.</li>
+        <li>Discutir os impactos ambientais da poluição e apresentar possíveis soluções.</li>
+    </ul>
 
-</div>
+</section>
 
 
 <!-- ================================================= -->
-<!-- ORGANIZAÇÃO E AVALIAÇÃO -->
+<!-- ORGANIZAÇÃO DO TRABALHO -->
 <!-- ================================================= -->
 
-<div class="introducao">
+<section>
 
-<h2><i class="fas fa-pen"></i> Organização do trabalho</h2>
+    <h2>📝 Organização do Trabalho</h2>
 
-<p>O trabalho deverá apresentar a seguinte estrutura:</p>
+    <p>O trabalho deverá apresentar a seguinte estrutura:</p>
 
-<ol>
-<li><strong>Capa:</strong> nome da escola, nome do estudante, turma, disciplina, professor e título.</li>
+    <ol>
+        <li><strong>Capa:</strong> nome da escola, nome do estudante, turma, disciplina, professor e título do trabalho.</li>
 
-<li><strong>Introdução:</strong> apresentação do tema e sua importância para a Química.</li>
+        <li><strong>Introdução:</strong> apresentação do tema e sua importância para o estudo da Química.</li>
 
-<li><strong>Desenvolvimento:</strong> explicação de todos os conceitos solicitados, incluindo exemplos, desenhos, esquemas e fórmulas.</li>
+        <li><strong>Desenvolvimento:</strong> explicação de todos os conceitos solicitados para o bimestre, incluindo exemplos, desenhos, esquemas e fórmulas.</li>
 
-<li><strong>Exercícios:</strong> resolução das atividades específicas solicitadas em cada bimestre.</li>
+        <li><strong>Exercícios:</strong> resolução das atividades específicas solicitadas em cada bimestre.</li>
 
-<li><strong>Conclusão:</strong> texto explicando o que foi aprendido e a importância dos conteúdos estudados.</li>
+        <li><strong>Conclusão:</strong> texto explicando o que foi aprendido e a importância dos conteúdos estudados.</li>
 
-<li><strong>Referências bibliográficas:</strong> indicação dos livros, apostilas e sites utilizados na pesquisa.</li>
-</ol>
+        <li><strong>Referências bibliográficas:</strong> indicação dos livros, apostilas e sites utilizados na pesquisa.</li>
+    </ol>
 
-</div>
-
-
-<div class="introducao">
-
-<h2><i class="fas fa-clipboard-check"></i> Critérios de avaliação</h2>
-
-<table class="tabela-avaliacao">
-
-<thead>
-<tr>
-<th>Critério</th>
-<th>Pontuação</th>
-</tr>
-</thead>
-
-<tbody>
-
-<tr>
-<td>Abordagem de todos os conceitos solicitados</td>
-<td align="center">3,0</td>
-</tr>
-
-<tr>
-<td>Explicação e compreensão dos conteúdos</td>
-<td align="center">2,0</td>
-</tr>
-
-<tr>
-<td>Exemplos, esquemas e representações químicas</td>
-<td align="center">2,0</td>
-</tr>
-
-<tr>
-<td>Exercícios e aplicações práticas</td>
-<td align="center">1,0</td>
-</tr>
-
-<tr>
-<td>Organização, capricho e legibilidade</td>
-<td align="center">1,0</td>
-</tr>
-
-<tr>
-<td>Introdução, conclusão e referências</td>
-<td align="center">1,0</td>
-</tr>
-
-<tr>
-<td><strong>TOTAL</strong></td>
-<td align="center"><strong>10,0</strong></td>
-</tr>
-
-</tbody>
-</table>
-
-</div>
+</section>
 
 
-<div class="alerta">
+<!-- ================================================= -->
+<!-- AVALIAÇÃO -->
+<!-- ================================================= -->
 
-<h2><i class="fas fa-exclamation-triangle"></i> Atenção à entrega!</h2>
+<section>
 
-<ul>
-<li>Trabalhos incompletos poderão ter a pontuação comprometida.</li>
-<li>Não serão considerados trabalhos que apresentem apenas cópias de textos sem explicação dos conceitos.</li>
-<li>O estudante deverá entregar o trabalho referente a cada bimestre em que ficou de recuperação.</li>
-<li>Consulte o professor em caso de dúvidas sobre os conteúdos ou sobre a realização do trabalho.</li>
-</ul>
+    <h2>📊 Critérios de Avaliação</h2>
 
-<p style="text-align:center; font-size:18px;">
-<strong>Estude, pesquise e aproveite esta oportunidade para recuperar sua aprendizagem!</strong>
-</p>
+    <table style="width:100%; border-collapse:collapse;">
 
-</div>
+        <thead>
+            <tr>
+                <th style="text-align:left;">Critério</th>
+                <th>Pontuação</th>
+            </tr>
+        </thead>
 
-</main>
+        <tbody>
+            <tr>
+                <td>Abordagem de todos os conceitos solicitados</td>
+                <td align="center">3,0</td>
+            </tr>
+
+            <tr>
+                <td>Explicação e compreensão dos conteúdos</td>
+                <td align="center">2,0</td>
+            </tr>
+
+            <tr>
+                <td>Exemplos, esquemas e representações químicas</td>
+                <td align="center">2,0</td>
+            </tr>
+
+            <tr>
+                <td>Exercícios e aplicações práticas</td>
+                <td align="center">1,0</td>
+            </tr>
+
+            <tr>
+                <td>Organização, capricho e legibilidade</td>
+                <td align="center">1,0</td>
+            </tr>
+
+            <tr>
+                <td>Introdução, conclusão e referências</td>
+                <td align="center">1,0</td>
+            </tr>
+
+            <tr>
+                <th style="text-align:left;">TOTAL</th>
+                <th>10,0</th>
+            </tr>
+        </tbody>
+
+    </table>
+
+</section>
+
+
+<section>
+
+    <h2>⚠️ Atenção à Entrega!</h2>
+
+    <ul>
+        <li>Trabalhos incompletos poderão ter a pontuação comprometida.</li>
+        <li>Não serão considerados trabalhos que apresentem apenas cópias de textos sem explicação dos conceitos.</li>
+        <li>O estudante deverá entregar o trabalho referente a cada bimestre em que ficou de recuperação.</li>
+        <li>Consulte o professor em caso de dúvidas sobre os conteúdos ou sobre a realização do trabalho.</li>
+    </ul>
+
+    <p style="text-align:center;">
+        <strong>Estude, pesquise e aproveite esta oportunidade para recuperar sua aprendizagem!</strong>
+    </p>
+
+</section>
 
 </body>
 </html>
+```
