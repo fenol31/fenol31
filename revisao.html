@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Revisão 4º Bimestre - Fenol31</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+  <nav>
+    <a href="index.html"><i class="fas fa-jedi"></i> Início</a>
+    <a href="1serie.html"><i class="fas fa-flask"></i> 1ª Série</a>
+    <a href="2serie.html"><i class="fas fa-vial"></i> 2ª Série</a>
+    <a href="3serie.html"><i class="fas fa-atom"></i> 3ª Série</a>
+    <a href="recuperacao.html"><i class="fas fa-book"></i> Recuperação</a>
+ <a href="revisao.html"><i class="fas fa-book"></i> Revisão</a>
+  </nav>
+
+  <h1>Revisão de Química - 4º Bimestre</h1>
+
+  <section>
+    <h2>📝 Escolha sua série</h2>
+
+    <div>
+      <button onclick="abrirSerie('serie1')">1ª Série</button>
+      <button onclick="abrirSerie('serie2')">2ª Série</button>
+      <button onclick="abrirSerie('serie3')">3ª Série</button>
+    </div>
+
+    <div id="serie1">
+      <h2>1ª Série - Revisão do 4º Bimestre</h2>
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSds1yNY7nE_-cLQX4-wLgkC2kYZdB0qwGoXWsElYs92_oKC6A/viewform?usp=sharing&ouid=117057802684672142910"
+        width="100%"
+        height="1200"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0">
+        Carregando...
+      </iframe>
+    </div>
+
+    <div id="serie2" style="display:none;">
+      <h2>2ª Série - Revisão do 4º Bimestre</h2>
+      <iframe
+        src="LINK_FORMS_2_SERIE"
+        width="100%"
+        height="1200"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0">
+        Carregando...
+      </iframe>
+    </div>
+
+    <div id="serie3" style="display:none;">
+      <h2>3ª Série - Revisão do 4º Bimestre</h2>
+      <iframe
+        src="LINK_FORMS_3_SERIE"
+        width="100%"
+        height="1200"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0">
+        Carregando...
+      </iframe>
+    </div>
+
+  </section>
+
+  <script>
+    function abrirSerie(serie) {
+      document.getElementById('serie1').style.display = 'none';
+      document.getElementById('serie2').style.display = 'none';
+      document.getElementById('serie3').style.display = 'none';
+
+      document.getElementById(serie).style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
